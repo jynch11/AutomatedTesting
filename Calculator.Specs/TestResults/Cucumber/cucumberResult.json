@@ -1,0 +1,112 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sum and subtraction of two numbers",
+    "tags": [
+      {
+        "name": "@REQ_TEST-4"
+      }
+    ],
+    "line": 1,
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Test Sum of two numbers",
+        "line": 7,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@TEST_TEST-5"
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I have entered 1 into the calculator",
+            "line": 8,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have also entered 2 into the calculator",
+            "line": 9,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I press add",
+            "line": 10,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the result should be 3 on the screen",
+            "line": 11,
+            "result": {
+              "status": "passed",
+              "duration": 1
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Test Subtraction of two numbers",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@TEST_TEST-11"
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given",
+            "name": "I have entered 4 into the calculator",
+            "line": 15,
+            "result": {
+              "status": "failed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "And",
+            "name": "I have also entered 2 into the calculator",
+            "line": 16,
+            "result": {
+              "status": "failed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "When",
+            "name": "I press subtract",
+            "line": 17,
+            "result": {
+              "status": "failed",
+              "duration": 1
+            }
+          },
+          {
+            "keyword": "Then",
+            "name": "the result should be 2 on the screen",
+            "line": 18,
+            "result": {
+              "status": "failed",
+              "duration": 1
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
