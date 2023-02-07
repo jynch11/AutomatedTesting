@@ -37,7 +37,11 @@
                 "NativeKeyword": "Then ",
                 "Name": "the result should be 3 on the screen",
                 "StepComments": [],
-                "AfterLastStepComments": []
+                "AfterLastStepComments": [
+                  {
+                    "Text": "#Tests AS A user I can calculate the sum and subtraction of two numbers"
+                  }
+                ]
               }
             ],
             "Tags": [
@@ -163,6 +167,6 @@
   "Configuration": {
     "SutName": "Calculator.Specs",
     "SutVersion": "V1",
-    "GeneratedOn": "7 February 2023 14:15:33"
+    "GeneratedOn": "7 February 2023 14:14:29"
   }
 }
