@@ -1,20 +1,48 @@
-<assemblies timestamp="02/07/2023 01:30:38">
-  <assembly name="C:\Users\User\Desktop\Project Moonshot\Tutorials\AutomatedTesting\Calculator.Specs\bin\Debug\net6.0\Calculator.Specs.dll" run-date="2023-02-07" run-time="01:30:38" total="1" passed="1" failed="0" skipped="0" time="1.570" errors="0">
+<assemblies timestamp="02/07/2023 05:56:04">
+  <assembly name="C:\Users\User\Desktop\Project Moonshot\Tutorials\AutomatedTesting\Calculator.Specs\bin\Debug\net6.0\Calculator.Specs.dll" run-date="2023-02-07" run-time="05:56:04" total="2" passed="1" failed="1" skipped="0" time="1.750" errors="0">
     <errors />
-    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Calculator.Specs.Features.SumOfTwoNumbersFeature" time="0.021">
-      <test name="Test Sum of two numbers" type="Calculator.Specs.Features.SumOfTwoNumbersFeature" method="TestSumOfTwoNumbers" time="0.0205190" result="Pass">
-        <output>Given I have entered 1 into the calculator
--&gt; done: SumOfTwoNumbersStepDefinitions.GivenIHaveEnteredIntoTheCalculator(1) (0.0s)
+    <collection total="2" passed="1" failed="1" skipped="0" name="Test collection for Calculator.Specs.Features.SumAndSubtractionOfTwoNumbersFeature" time="0.025">
+      <test name="Test Subtraction of two numbers" type="Calculator.Specs.Features.SumAndSubtractionOfTwoNumbersFeature" method="TestSubtractionOfTwoNumbers" time="0.0201594" result="Fail">
+        <output>Given I have entered 4 into the calculator
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.GivenIHaveEnteredIntoTheCalculator(4) (0.0s)
 And I have also entered 2 into the calculator
--&gt; done: SumOfTwoNumbersStepDefinitions.GivenIHaveAlsoEnteredIntoTheCalculator(2) (0.0s)
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.GivenIHaveAlsoEnteredIntoTheCalculator(2) (0.0s)
+When I press subtract
+-&gt; pending: SumAndSubtractionOfTwoNumbersStepDefinitions.WhenIPressSubtract()
+Then the result should be 2 on the screen
+-&gt; skipped because of previous errors
+
+</output>
+        <failure>
+          <message>TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitPendingStepException : Test pending: One or more step definitions are not implemented yet.
+  SumAndSubtractionOfTwoNumbersStepDefinitions.WhenIPressSubtract()</message>
+          <stack-trace>   at TechTalk.SpecFlow.xUnit.SpecFlowPlugin.XUnitRuntimeProvider.TestPending(String message)
+   at TechTalk.SpecFlow.ErrorHandling.ErrorProvider.ThrowPendingError(ScenarioExecutionStatus testStatus, String message)
+   at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   at TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   at Calculator.Specs.Features.SumAndSubtractionOfTwoNumbersFeature.ScenarioCleanup()
+   at Calculator.Specs.Features.SumAndSubtractionOfTwoNumbersFeature.TestSubtractionOfTwoNumbers() in C:\Users\User\Desktop\Project Moonshot\Tutorials\AutomatedTesting\Calculator.Specs\Features\1_TEST-4.feature:line 18</stack-trace>
+        </failure>
+        <traits>
+          <trait name="FeatureTitle" value="Sum and subtraction of two numbers" />
+          <trait name="Description" value="Test Subtraction of two numbers" />
+          <trait name="Category" value="TEST_TEST-11" />
+          <trait name="Category" value="REQ_TEST-4" />
+        </traits>
+      </test>
+      <test name="Test Sum of two numbers" type="Calculator.Specs.Features.SumAndSubtractionOfTwoNumbersFeature" method="TestSumOfTwoNumbers" time="0.0052624" result="Pass">
+        <output>Given I have entered 1 into the calculator
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.GivenIHaveEnteredIntoTheCalculator(1) (0.0s)
+And I have also entered 2 into the calculator
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.GivenIHaveAlsoEnteredIntoTheCalculator(2) (0.0s)
 When I press add
--&gt; done: SumOfTwoNumbersStepDefinitions.WhenIPressAdd() (0.0s)
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.WhenIPressAdd() (0.0s)
 Then the result should be 3 on the screen
--&gt; done: SumOfTwoNumbersStepDefinitions.ThenTheResultShouldBeOnTheScreen(3) (0.0s)
+-&gt; done: SumAndSubtractionOfTwoNumbersStepDefinitions.ThenTheResultShouldBeOnTheScreen(3) (0.0s)
 
 </output>
         <traits>
-          <trait name="FeatureTitle" value="Sum of two numbers" />
+          <trait name="FeatureTitle" value="Sum and subtraction of two numbers" />
           <trait name="Description" value="Test Sum of two numbers" />
           <trait name="Category" value="TEST_TEST-5" />
           <trait name="Category" value="REQ_TEST-4" />

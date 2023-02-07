@@ -48,8 +48,8 @@
               "@TEST_TEST-5"
             ],
             "Result": {
-              "WasExecuted": false,
-              "WasSuccessful": false,
+              "WasExecuted": true,
+              "WasSuccessful": true,
               "WasProvided": true
             }
           },
@@ -91,14 +91,14 @@
               "@TEST_TEST-11"
             ],
             "Result": {
-              "WasExecuted": false,
+              "WasExecuted": true,
               "WasSuccessful": false,
               "WasProvided": true
             }
           }
         ],
         "Result": {
-          "WasExecuted": false,
+          "WasExecuted": true,
           "WasSuccessful": false,
           "WasProvided": true
         },
@@ -107,7 +107,7 @@
         ]
       },
       "Result": {
-        "WasExecuted": false,
+        "WasExecuted": true,
         "WasSuccessful": false,
         "WasProvided": true
       }
@@ -118,32 +118,32 @@
       {
         "Tag": "@REQ_TEST-4",
         "Total": 2,
-        "Passing": 0,
-        "Failing": 0,
-        "Inconclusive": 2
+        "Passing": 1,
+        "Failing": 1,
+        "Inconclusive": 0
       },
       {
         "Tag": "@TEST_TEST-5",
         "Total": 1,
-        "Passing": 0,
+        "Passing": 1,
         "Failing": 0,
-        "Inconclusive": 1
+        "Inconclusive": 0
       },
       {
         "Tag": "@TEST_TEST-11",
         "Total": 1,
         "Passing": 0,
-        "Failing": 0,
-        "Inconclusive": 1
+        "Failing": 1,
+        "Inconclusive": 0
       }
     ],
     "Folders": [
       {
         "Folder": "1_TEST-4.feature",
         "Total": 2,
-        "Passing": 0,
-        "Failing": 0,
-        "Inconclusive": 2
+        "Passing": 1,
+        "Failing": 1,
+        "Inconclusive": 0
       }
     ],
     "NotTestedFolders": [
@@ -157,15 +157,15 @@
     ],
     "Scenarios": {
       "Total": 2,
-      "Passing": 0,
-      "Failing": 0,
-      "Inconclusive": 2
+      "Passing": 1,
+      "Failing": 1,
+      "Inconclusive": 0
     },
     "Features": {
       "Total": 1,
       "Passing": 0,
-      "Failing": 0,
-      "Inconclusive": 1
+      "Failing": 1,
+      "Inconclusive": 0
     },
     "FoldersWithTestKinds": [
       {
@@ -180,6 +180,6 @@
   "Configuration": {
     "SutName": "Calculator",
     "SutVersion": "V1",
-    "GeneratedOn": "7 February 2023 13:35:25"
+    "GeneratedOn": "7 February 2023 13:56:17"
   }
 }
