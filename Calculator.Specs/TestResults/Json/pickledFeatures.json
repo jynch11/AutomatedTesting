@@ -1,0 +1,131 @@
+{
+  "Features": [
+    {
+      "RelativeFolder": "1_TEST-4.feature",
+      "Feature": {
+        "Name": "Sum of two numbers",
+        "Description": "",
+        "FeatureElements": [
+          {
+            "Name": "Test Sum of two numbers",
+            "Slug": "test-sum-of-two-numbers",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "I have entered 1 into the calculator",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "I have also entered 2 into the calculator",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "I press add",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "the result should be 3 on the screen",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@TEST_TEST-5"
+            ],
+            "Result": {
+              "WasExecuted": true,
+              "WasSuccessful": true,
+              "WasProvided": true
+            }
+          }
+        ],
+        "Result": {
+          "WasExecuted": true,
+          "WasSuccessful": true,
+          "WasProvided": true
+        },
+        "Tags": [
+          "@REQ_TEST-4"
+        ]
+      },
+      "Result": {
+        "WasExecuted": true,
+        "WasSuccessful": true,
+        "WasProvided": true
+      }
+    }
+  ],
+  "Summary": {
+    "Tags": [
+      {
+        "Tag": "@REQ_TEST-4",
+        "Total": 1,
+        "Passing": 1,
+        "Failing": 0,
+        "Inconclusive": 0
+      },
+      {
+        "Tag": "@TEST_TEST-5",
+        "Total": 1,
+        "Passing": 1,
+        "Failing": 0,
+        "Inconclusive": 0
+      }
+    ],
+    "Folders": [
+      {
+        "Folder": "1_TEST-4.feature",
+        "Total": 1,
+        "Passing": 1,
+        "Failing": 0,
+        "Inconclusive": 0
+      }
+    ],
+    "NotTestedFolders": [
+      {
+        "Folder": "1_TEST-4.feature",
+        "Total": 0,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 0
+      }
+    ],
+    "Scenarios": {
+      "Total": 1,
+      "Passing": 1,
+      "Failing": 0,
+      "Inconclusive": 0
+    },
+    "Features": {
+      "Total": 1,
+      "Passing": 1,
+      "Failing": 0,
+      "Inconclusive": 0
+    },
+    "FoldersWithTestKinds": [
+      {
+        "Folder": "1_TEST-4.feature",
+        "Total": 1,
+        "Automated": 1,
+        "Manual": 0,
+        "NotTested": 0
+      }
+    ]
+  },
+  "Configuration": {
+    "SutName": "Calculator",
+    "SutVersion": "V1",
+    "GeneratedOn": "7 February 2023 13:21:01"
+  }
+}

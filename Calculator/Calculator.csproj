@@ -7,4 +7,8 @@
     <OutputType>Library</OutputType>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Pickles" Version="4.0.3" />
+  </ItemGroup>
+
 </Project>
