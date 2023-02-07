@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O8kOU/5Qombywdoe5ng2yBsHURWPrqOEqbCcUeBDHhB/ltFLc4itJIMp+TcyfjHFvjNi+qDgL68JnIS/MFlINA==",
+  "dgSpecHash": "5Td0j9wjqTlRW9z5WwfNcx/1qYzytBP57I6VYbGp/CpmIjrDiHEFxz7g16huRfpYfyp4x9NbVtBtrYP6kLj2jw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\Project Moonshot\\Tutorials\\Calculator\\Calculator\\Calculator.csproj",
+  "projectFilePath": "C:\\Users\\User\\Desktop\\Project Moonshot\\Tutorials\\AutomatedTesting\\Calculator\\Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

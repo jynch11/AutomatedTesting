@@ -1,0 +1,24 @@
+<assemblies timestamp="02/07/2023 01:03:01">
+  <assembly name="C:\Users\User\Desktop\Project Moonshot\Tutorials\AutomatedTesting\Calculator.Specs\bin\Debug\net6.0\Calculator.Specs.dll" run-date="2023-02-07" run-time="01:03:01" total="1" passed="1" failed="0" skipped="0" time="1.778" errors="0">
+    <errors />
+    <collection total="1" passed="1" failed="0" skipped="0" name="Test collection for Calculator.Specs.Features.CalculatorFeature" time="0.038">
+      <test name="Add two numbers" type="Calculator.Specs.Features.CalculatorFeature" method="AddTwoNumbers" time="0.0376994" result="Pass">
+        <output>Given the first number is 50
+-&gt; done: CalculatorStepDefinitions.GivenTheFirstNumberIs(50) (0.0s)
+And the second number is 70
+-&gt; done: CalculatorStepDefinitions.GivenTheSecondNumberIs(70) (0.0s)
+When the two numbers are added
+-&gt; done: CalculatorStepDefinitions.WhenTheTwoNumbersAreAdded() (0.0s)
+Then the result should be 120
+-&gt; done: CalculatorStepDefinitions.ThenTheResultShouldBe(120) (0.0s)
+
+</output>
+        <traits>
+          <trait name="FeatureTitle" value="Calculator" />
+          <trait name="Description" value="Add two numbers" />
+          <trait name="Category" value="mytag" />
+        </traits>
+      </test>
+    </collection>
+  </assembly>
+</assemblies>
