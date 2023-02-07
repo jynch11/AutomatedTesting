@@ -20,7 +20,7 @@ namespace Calculator.Specs.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [Xunit.TraitAttribute("Category", "REQ_TEST-4")]
-    public partial class SumOfTwoNumbersFeature : object, Xunit.IClassFixture<SumOfTwoNumbersFeature.FixtureData>, System.IDisposable
+    public partial class SumAndSubtractionOfTwoNumbersFeature : object, Xunit.IClassFixture<SumAndSubtractionOfTwoNumbersFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
@@ -33,7 +33,7 @@ namespace Calculator.Specs.Features
 #line 1 "1_TEST-4.feature"
 #line hidden
         
-        public SumOfTwoNumbersFeature(SumOfTwoNumbersFeature.FixtureData fixtureData, Calculator_Specs_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public SumAndSubtractionOfTwoNumbersFeature(SumAndSubtractionOfTwoNumbersFeature.FixtureData fixtureData, Calculator_Specs_XUnitAssemblyFixture assemblyFixture, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -42,7 +42,7 @@ namespace Calculator.Specs.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Sum of two numbers", null, ProgrammingLanguage.CSharp, new string[] {
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Sum and subtraction of two numbers", null, ProgrammingLanguage.CSharp, new string[] {
                         "REQ_TEST-4"});
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -84,7 +84,7 @@ namespace Calculator.Specs.Features
         }
         
         [Xunit.SkippableFactAttribute(DisplayName="Test Sum of two numbers")]
-        [Xunit.TraitAttribute("FeatureTitle", "Sum of two numbers")]
+        [Xunit.TraitAttribute("FeatureTitle", "Sum and subtraction of two numbers")]
         [Xunit.TraitAttribute("Description", "Test Sum of two numbers")]
         [Xunit.TraitAttribute("Category", "TEST_TEST-5")]
         public virtual void TestSumOfTwoNumbers()
@@ -93,7 +93,7 @@ namespace Calculator.Specs.Features
                     "TEST_TEST-5"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Sum of two numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+#line 7
  this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -113,17 +113,63 @@ namespace Calculator.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 7
+#line 8
   testRunner.Given("I have entered 1 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 9
   testRunner.And("I have also entered 2 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 9
+#line 10
   testRunner.When("I press add", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 11
   testRunner.Then("the result should be 3 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [Xunit.SkippableFactAttribute(DisplayName="Test Subtraction of two numbers")]
+        [Xunit.TraitAttribute("FeatureTitle", "Sum and subtraction of two numbers")]
+        [Xunit.TraitAttribute("Description", "Test Subtraction of two numbers")]
+        [Xunit.TraitAttribute("Category", "TEST_TEST-11")]
+        public virtual void TestSubtractionOfTwoNumbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "TEST_TEST-11"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Test Subtraction of two numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 14
+ this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 15
+  testRunner.Given("I have entered 4 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 16
+  testRunner.And("I have also entered 2 into the calculator", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 17
+  testRunner.When("I press subtract", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 18
+  testRunner.Then("the result should be 2 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -136,12 +182,12 @@ namespace Calculator.Specs.Features
             
             public FixtureData()
             {
-                SumOfTwoNumbersFeature.FeatureSetup();
+                SumAndSubtractionOfTwoNumbersFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                SumOfTwoNumbersFeature.FeatureTearDown();
+                SumAndSubtractionOfTwoNumbersFeature.FeatureTearDown();
             }
         }
     }
