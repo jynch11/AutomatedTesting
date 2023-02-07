@@ -3,7 +3,7 @@
     {
       "RelativeFolder": "1_TEST-4.feature",
       "Feature": {
-        "Name": "Sum of two numbers",
+        "Name": "Sum and subtraction of two numbers",
         "Description": "",
         "FeatureElements": [
           {
@@ -37,22 +37,69 @@
                 "NativeKeyword": "Then ",
                 "Name": "the result should be 3 on the screen",
                 "StepComments": [],
-                "AfterLastStepComments": []
+                "AfterLastStepComments": [
+                  {
+                    "Text": "#Tests AS A user I can calculate the sum and subtraction of two numbers"
+                  }
+                ]
               }
             ],
             "Tags": [
               "@TEST_TEST-5"
             ],
             "Result": {
-              "WasExecuted": true,
-              "WasSuccessful": true,
+              "WasExecuted": false,
+              "WasSuccessful": false,
+              "WasProvided": true
+            }
+          },
+          {
+            "Name": "Test Subtraction of two numbers",
+            "Slug": "test-subtraction-of-two-numbers",
+            "Description": "",
+            "Steps": [
+              {
+                "Keyword": "Given",
+                "NativeKeyword": "Given ",
+                "Name": "I have entered 4 into the calculator",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "And",
+                "NativeKeyword": "And ",
+                "Name": "I have also entered 2 into the calculator",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "When",
+                "NativeKeyword": "When ",
+                "Name": "I press subtract",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              },
+              {
+                "Keyword": "Then",
+                "NativeKeyword": "Then ",
+                "Name": "the result should be 2 on the screen",
+                "StepComments": [],
+                "AfterLastStepComments": []
+              }
+            ],
+            "Tags": [
+              "@TEST_TEST-11"
+            ],
+            "Result": {
+              "WasExecuted": false,
+              "WasSuccessful": false,
               "WasProvided": true
             }
           }
         ],
         "Result": {
-          "WasExecuted": true,
-          "WasSuccessful": true,
+          "WasExecuted": false,
+          "WasSuccessful": false,
           "WasProvided": true
         },
         "Tags": [
@@ -60,8 +107,8 @@
         ]
       },
       "Result": {
-        "WasExecuted": true,
-        "WasSuccessful": true,
+        "WasExecuted": false,
+        "WasSuccessful": false,
         "WasProvided": true
       }
     }
@@ -70,26 +117,33 @@
     "Tags": [
       {
         "Tag": "@REQ_TEST-4",
-        "Total": 1,
-        "Passing": 1,
+        "Total": 2,
+        "Passing": 0,
         "Failing": 0,
-        "Inconclusive": 0
+        "Inconclusive": 2
       },
       {
         "Tag": "@TEST_TEST-5",
         "Total": 1,
-        "Passing": 1,
+        "Passing": 0,
         "Failing": 0,
-        "Inconclusive": 0
+        "Inconclusive": 1
+      },
+      {
+        "Tag": "@TEST_TEST-11",
+        "Total": 1,
+        "Passing": 0,
+        "Failing": 0,
+        "Inconclusive": 1
       }
     ],
     "Folders": [
       {
         "Folder": "1_TEST-4.feature",
-        "Total": 1,
-        "Passing": 1,
+        "Total": 2,
+        "Passing": 0,
         "Failing": 0,
-        "Inconclusive": 0
+        "Inconclusive": 2
       }
     ],
     "NotTestedFolders": [
@@ -102,22 +156,22 @@
       }
     ],
     "Scenarios": {
-      "Total": 1,
-      "Passing": 1,
+      "Total": 2,
+      "Passing": 0,
       "Failing": 0,
-      "Inconclusive": 0
+      "Inconclusive": 2
     },
     "Features": {
       "Total": 1,
-      "Passing": 1,
+      "Passing": 0,
       "Failing": 0,
-      "Inconclusive": 0
+      "Inconclusive": 1
     },
     "FoldersWithTestKinds": [
       {
         "Folder": "1_TEST-4.feature",
-        "Total": 1,
-        "Automated": 1,
+        "Total": 2,
+        "Automated": 2,
         "Manual": 0,
         "NotTested": 0
       }
@@ -126,6 +180,6 @@
   "Configuration": {
     "SutName": "Calculator",
     "SutVersion": "V1",
-    "GeneratedOn": "7 February 2023 13:21:01"
+    "GeneratedOn": "7 February 2023 13:35:25"
   }
 }
